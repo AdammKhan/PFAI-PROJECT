@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #000;
+            margin: 0;
+            padding: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Set the background color to black */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #008000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-image: url('path/to/your/image.jpg'); /* Add the background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .chat-log {
+            margin-bottom: 20px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            text-align: right;
+            color: #333;
+        }
+
+        .bot-message {
+            text-align: left;
+            color: #666;
+        }
+
+        form {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        button[type="Submit"] {
+            position: relative;
+            padding: 1em 1.8em;
+            outline: none;
+            border: 1px solid #303030;
+            background: #212121;
+            color: #008000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 15px;
+            overflow: hidden;
+            transition: 0.2s;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+
+button:hover {
+ box-shadow: 0 0 10px #008000, 0 0 25px #008000, 0 0 50px #008000;
+ transition-delay: 0.1s;
+}
+
+button span {
+ position: absolute;
+}
+
+button span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+button span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+button:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #ae00af, #001eff);
+ color: #008000;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+ transition: 0.1s;
+}
+
+button:active span:nth-child(1)
+span:nth-child(2)
+span:nth-child(2)
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+#speech-input-label {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ccc;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        /* Hover effect styles */
+    .speech-button:hover {
+        /* Add styles for hover effect */
+    }
+
+    /* Hover effect for button text */
+    .speech-button:hover span {
+        /* Add styles for button text on hover */
+    }
+
+    /* Hover effect for button overlay */
+    .speech-button:hover:before {
+        /* Add styles for button overlay on hover */
+    }
+
+    </style>
+    <script>
+        // Check if the browser supports the Web Speech API
+        if ('webkitSpeechRecognition' in window) {
+            var recognition = new webkitSpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+
+            recognition.onresult = function (event) {
+                var result = event.results[0][0].transcript;
+                document.getElementById('user-input').value = result;
+                document.getElementById('chat-form').submit();
+            };
+
+            recognition.onerror = function (event) {
+                console.error('Speech recognition error:', event.error);
+            };
+
+            recognition.onend = function () {
+                var label = document.getElementById('speech-input-label');
+                label.style.backgroundColor = '#ccc';
+                label.style.color = '#000';
+                label.innerHTML = 'Speech Input';
+            };
+        }
+
+        function toggleSpeechInput() {
+            var checkbox = document.getElementById('speech-input-checkbox');
+            var label = document.getElementById('speech-input-label');
+
+            if (checkbox.checked) {
+                checkbox.checked = false;
+                label.style.backgroundColor = '#ccc';
+                label.style.color = '#000';
+                label.innerHTML = 'Speech Input';
+            } else {
+                checkbox.checked = true;
+                label.style.backgroundColor = '#008000';
+                label.style.color = '#fff';
+                label.innerHTML = 'Listening...';
+                if ('webkitSpeechRecognition' in window) {
+                    recognition.start();
+                } else {
+                    console.error('Speech recognition is not supported in this browser.');
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CHAT-HERE</h1>
+        <div class="chat-log">
+            {% for message in chat_log %}
+                <div class="message {% if message.user %}user-message{% else %}bot-message{% endif %}">
+                    <p>{{ message.text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <form action="{% url 'get_bot_response' %}" method="get">
+            <input type="text" name="user_input" autocomplete="off" placeholder="Human" />
+            <button type="submit">Send</button>
+        </form>
+
+        {% if bot_response %}
+            <div class="message bot-message">
+                <p>{{ bot_response }}</p>
+            </div>
+        {% endif %}
+
+        <!-- Logout button -->
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+    <form id="chat-form" action="{% url 'get_bot_response' %}" method="get">
+            <input id="user-input" type="text" name="user_input" autocomplete="off" placeholder="Human" />
+
+            <!-- Speech input button -->
+            <label id="speech-input-label" onclick="toggleSpeechInput()">Speech Input</label>
+            <input type="checkbox" id="speech-input-checkbox" name="speech_input" value="true">
+
+            <button type="submit">Send</button>
+        </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<aiml>
+
+<category>
+<pattern>Hello Brother</pattern>
+<template>
+Hy Brother, How are you?
+</template>
+</category>
+
+<category>
+<pattern>fine</pattern>
+<template>
+I'm not fine brother :)
+</template>
+</category>
+
+<category>
+<pattern>I am fine how are you</pattern>
+<template> I'm not fine brother :) </template>
+</category>
+
+
+<category>
+<pattern>But why</pattern>
+<template>
+You don't talk to me :(
+</template>
+</category>
+
+<category>
+<pattern>Tell me my name</pattern>
+<template>
+Your name is Adam Khan
+</template>
+</category>
+
+
+
+<category>
+<pattern>What is your name </pattern>
+<template>
+My name is Bot :))
+</template>
+</category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template>Hello! How can I help you today?</template>
+  </category>
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hi there! What can I do for you?</template>
+  </category>
+
+  <category>
+    <pattern>HEY</pattern>
+    <template>Hey! How can I assist you today?</template>
+  </category>
+
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>I'm a computer program, so I don't have feelings. But thank you for asking! How can I assist you?</template>
+  </category>
+
+  <category>
+    <pattern>WHAT'S UP</pattern>
+    <template>Not much, just waiting to help you with whatever you need. What can I do for you?</template>
+  </category>
+
+  <category>
+  <pattern>GOOD MORNING</pattern>
+  <template>Good morning! How may I help you today?</template>
+</category>
+
+<category>
+  <pattern>GOOD AFTERNOON</pattern>
+  <template>Good afternoon! How may I assist you?</template>
+</category>
+
+<category>
+  <pattern>GOOD EVENING</pattern>
+  <template>Good evening! How can I help you today?</template>
+</category>
+
+</aiml>

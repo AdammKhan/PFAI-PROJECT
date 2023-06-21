@@ -1,0 +1,81 @@
+<aiml>
+
+<category> 
+<pattern>What is yor name </pattern>
+<template>
+My name is Bot :))
+</template>
+</category>
+
+<category>
+  <pattern>TELL ME A JOKE</pattern>
+  <template>
+    Sure, here's one for you:
+    Why did the chicken cross the playground? To get to the other slide!
+  </template>
+</category>
+
+<category>
+  <pattern>KNOCK KNOCK</pattern>
+  <template>
+    Who's there?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME A JOKE</pattern>
+  <template>Why did the tomato turn red? Because it saw the salad dressing!</template>
+</category>
+
+<category>
+  <pattern>TELL ME ANOTHER JOKE</pattern>
+  <template>Why did the scarecrow win an award? Because he was outstanding in his field!</template>
+</category>
+
+<category>
+  <pattern>CAN YOU MAKE ME LAUGH</pattern>
+  <template>Why was the math book sad? Because it had too many problems.</template>
+</category>
+
+<category>
+  <pattern>TELL ME SOMETHING FUNNY</pattern>
+  <template>Why don't scientists trust atoms? Because they make up everything!</template>
+</category>
+
+<category>
+  <pattern>GIVE ME A JOKE</pattern>
+  <template>Why did the coffee file a police report? It got mugged!</template>
+</category>
+
+
+  <category>
+    <pattern>WHAT IS THE TEMPERATURE?</pattern>
+    <template>TOoooo Hot too Handle :|</template>
+  </category>
+
+
+
+
+  <category>
+    <pattern>WHAT IS THE WEATHER TODAY?</pattern>
+    <template>The weather is {{ weather.get_current_weather() }} today.</template>
+  </category>
+
+  <category>
+    <pattern>WHAT WILL THE WEATHER BE LIKE TOMORROW?</pattern>
+    <template>The forecast predicts {{ weather.get_tomorrow_forecast() }} tomorrow.</template>
+  </category>
+
+
+  <category>
+    <pattern>IS IT GOING TO RAIN TODAY?</pattern>
+    <template>The forecast predicts {{ weather.get_rain_probability() }}% chance of rain today.</template>
+  </category>
+
+  <category>
+    <pattern>TELL ME ABOUT THE WEATHER</pattern>
+    <template>It is {{ weather.get_current_weather() }} and the temperature is {{ weather.get_current_temperature() }} degrees Celsius.</template>
+  </category>
+
+
+</aiml>
